@@ -1,0 +1,232 @@
+# BEGIN iThemes Security - Do not modify or remove this line
+# iThemes Security Config Details: 2
+	# Ban Hosts - Security > Settings > Banned Users
+	SetEnvIF REMOTE_ADDR "^119\.91\.77\.10$" DenyAccess
+	SetEnvIF X-FORWARDED-FOR "^119\.91\.77\.10$" DenyAccess
+	SetEnvIF X-CLUSTER-CLIENT-IP "^119\.91\.77\.10$" DenyAccess
+
+	SetEnvIF REMOTE_ADDR "^119\.63\.139\.62$" DenyAccess
+	SetEnvIF X-FORWARDED-FOR "^119\.63\.139\.62$" DenyAccess
+	SetEnvIF X-CLUSTER-CLIENT-IP "^119\.63\.139\.62$" DenyAccess
+
+	SetEnvIF REMOTE_ADDR "^83\.43\.2\.223$" DenyAccess
+	SetEnvIF X-FORWARDED-FOR "^83\.43\.2\.223$" DenyAccess
+	SetEnvIF X-CLUSTER-CLIENT-IP "^83\.43\.2\.223$" DenyAccess
+
+	SetEnvIF REMOTE_ADDR "^113\.66\.32\.159$" DenyAccess
+	SetEnvIF X-FORWARDED-FOR "^113\.66\.32\.159$" DenyAccess
+	SetEnvIF X-CLUSTER-CLIENT-IP "^113\.66\.32\.159$" DenyAccess
+
+	SetEnvIF REMOTE_ADDR "^106\.55\.47\.205$" DenyAccess
+	SetEnvIF X-FORWARDED-FOR "^106\.55\.47\.205$" DenyAccess
+	SetEnvIF X-CLUSTER-CLIENT-IP "^106\.55\.47\.205$" DenyAccess
+
+	SetEnvIF REMOTE_ADDR "^115\.159\.117\.88$" DenyAccess
+	SetEnvIF X-FORWARDED-FOR "^115\.159\.117\.88$" DenyAccess
+	SetEnvIF X-CLUSTER-CLIENT-IP "^115\.159\.117\.88$" DenyAccess
+
+	SetEnvIF REMOTE_ADDR "^52\.188\.104\.182$" DenyAccess
+	SetEnvIF X-FORWARDED-FOR "^52\.188\.104\.182$" DenyAccess
+	SetEnvIF X-CLUSTER-CLIENT-IP "^52\.188\.104\.182$" DenyAccess
+
+	SetEnvIF REMOTE_ADDR "^195\.154\.185\.170$" DenyAccess
+	SetEnvIF X-FORWARDED-FOR "^195\.154\.185\.170$" DenyAccess
+	SetEnvIF X-CLUSTER-CLIENT-IP "^195\.154\.185\.170$" DenyAccess
+
+	SetEnvIF REMOTE_ADDR "^62\.210\.204\.182$" DenyAccess
+	SetEnvIF X-FORWARDED-FOR "^62\.210\.204\.182$" DenyAccess
+	SetEnvIF X-CLUSTER-CLIENT-IP "^62\.210\.204\.182$" DenyAccess
+
+	SetEnvIF REMOTE_ADDR "^195\.154\.207\.19$" DenyAccess
+	SetEnvIF X-FORWARDED-FOR "^195\.154\.207\.19$" DenyAccess
+	SetEnvIF X-CLUSTER-CLIENT-IP "^195\.154\.207\.19$" DenyAccess
+
+	SetEnvIF REMOTE_ADDR "^195\.154\.185\.58$" DenyAccess
+	SetEnvIF X-FORWARDED-FOR "^195\.154\.185\.58$" DenyAccess
+	SetEnvIF X-CLUSTER-CLIENT-IP "^195\.154\.185\.58$" DenyAccess
+
+	SetEnvIF REMOTE_ADDR "^195\.154\.169\.11$" DenyAccess
+	SetEnvIF X-FORWARDED-FOR "^195\.154\.169\.11$" DenyAccess
+	SetEnvIF X-CLUSTER-CLIENT-IP "^195\.154\.169\.11$" DenyAccess
+
+	SetEnvIF REMOTE_ADDR "^62\.210\.177\.248$" DenyAccess
+	SetEnvIF X-FORWARDED-FOR "^62\.210\.177\.248$" DenyAccess
+	SetEnvIF X-CLUSTER-CLIENT-IP "^62\.210\.177\.248$" DenyAccess
+
+	SetEnvIF REMOTE_ADDR "^168\.62\.41\.113$" DenyAccess
+	SetEnvIF X-FORWARDED-FOR "^168\.62\.41\.113$" DenyAccess
+	SetEnvIF X-CLUSTER-CLIENT-IP "^168\.62\.41\.113$" DenyAccess
+
+	SetEnvIF REMOTE_ADDR "^120\.53\.21\.151$" DenyAccess
+	SetEnvIF X-FORWARDED-FOR "^120\.53\.21\.151$" DenyAccess
+	SetEnvIF X-CLUSTER-CLIENT-IP "^120\.53\.21\.151$" DenyAccess
+
+	SetEnvIF REMOTE_ADDR "^62\.210\.79\.249$" DenyAccess
+	SetEnvIF X-FORWARDED-FOR "^62\.210\.79\.249$" DenyAccess
+	SetEnvIF X-CLUSTER-CLIENT-IP "^62\.210\.79\.249$" DenyAccess
+
+	SetEnvIF REMOTE_ADDR "^198\.27\.64\.85$" DenyAccess
+	SetEnvIF X-FORWARDED-FOR "^198\.27\.64\.85$" DenyAccess
+	SetEnvIF X-CLUSTER-CLIENT-IP "^198\.27\.64\.85$" DenyAccess
+
+	SetEnvIF REMOTE_ADDR "^62\.210\.79\.179$" DenyAccess
+	SetEnvIF X-FORWARDED-FOR "^62\.210\.79\.179$" DenyAccess
+	SetEnvIF X-CLUSTER-CLIENT-IP "^62\.210\.79\.179$" DenyAccess
+
+	SetEnvIF REMOTE_ADDR "^142\.4\.213\.12$" DenyAccess
+	SetEnvIF X-FORWARDED-FOR "^142\.4\.213\.12$" DenyAccess
+	SetEnvIF X-CLUSTER-CLIENT-IP "^142\.4\.213\.12$" DenyAccess
+
+	SetEnvIF REMOTE_ADDR "^52\.161\.26\.93$" DenyAccess
+	SetEnvIF X-FORWARDED-FOR "^52\.161\.26\.93$" DenyAccess
+	SetEnvIF X-CLUSTER-CLIENT-IP "^52\.161\.26\.93$" DenyAccess
+
+	SetEnvIF REMOTE_ADDR "^103\.119\.62\.118$" DenyAccess
+	SetEnvIF X-FORWARDED-FOR "^103\.119\.62\.118$" DenyAccess
+	SetEnvIF X-CLUSTER-CLIENT-IP "^103\.119\.62\.118$" DenyAccess
+
+	<IfModule mod_authz_core.c>
+		<RequireAll>
+			Require all granted
+			Require not env DenyAccess
+			Require not ip 119.91.77.10
+			Require not ip 119.63.139.62
+			Require not ip 83.43.2.223
+			Require not ip 113.66.32.159
+			Require not ip 106.55.47.205
+			Require not ip 115.159.117.88
+			Require not ip 52.188.104.182
+			Require not ip 195.154.185.170
+			Require not ip 62.210.204.182
+			Require not ip 195.154.207.19
+			Require not ip 195.154.185.58
+			Require not ip 195.154.169.11
+			Require not ip 62.210.177.248
+			Require not ip 168.62.41.113
+			Require not ip 120.53.21.151
+			Require not ip 62.210.79.249
+			Require not ip 198.27.64.85
+			Require not ip 62.210.79.179
+			Require not ip 142.4.213.12
+			Require not ip 52.161.26.93
+			Require not ip 103.119.62.118
+		</RequireAll>
+	</IfModule>
+	<IfModule !mod_authz_core.c>
+		Order allow,deny
+		Allow from all
+		Deny from env=DenyAccess
+		Deny from 119.91.77.10
+		Deny from 119.63.139.62
+		Deny from 83.43.2.223
+		Deny from 113.66.32.159
+		Deny from 106.55.47.205
+		Deny from 115.159.117.88
+		Deny from 52.188.104.182
+		Deny from 195.154.185.170
+		Deny from 62.210.204.182
+		Deny from 195.154.207.19
+		Deny from 195.154.185.58
+		Deny from 195.154.169.11
+		Deny from 62.210.177.248
+		Deny from 168.62.41.113
+		Deny from 120.53.21.151
+		Deny from 62.210.79.249
+		Deny from 198.27.64.85
+		Deny from 62.210.79.179
+		Deny from 142.4.213.12
+		Deny from 52.161.26.93
+		Deny from 103.119.62.118
+	</IfModule>
+
+	# Disable XML-RPC - Security > Settings > WordPress Tweaks > XML-RPC
+	<files xmlrpc.php>
+		<IfModule mod_authz_core.c>
+			Require all denied
+		</IfModule>
+		<IfModule !mod_authz_core.c>
+			Order allow,deny
+			Deny from all
+		</IfModule>
+	</files>
+
+	# Protect System Files - Security > Settings > System Tweaks > System Files
+	<files .htaccess>
+		<IfModule mod_authz_core.c>
+			Require all denied
+		</IfModule>
+		<IfModule !mod_authz_core.c>
+			Order allow,deny
+			Deny from all
+		</IfModule>
+	</files>
+	<files readme.html>
+		<IfModule mod_authz_core.c>
+			Require all denied
+		</IfModule>
+		<IfModule !mod_authz_core.c>
+			Order allow,deny
+			Deny from all
+		</IfModule>
+	</files>
+	<files readme.txt>
+		<IfModule mod_authz_core.c>
+			Require all denied
+		</IfModule>
+		<IfModule !mod_authz_core.c>
+			Order allow,deny
+			Deny from all
+		</IfModule>
+	</files>
+	<files wp-config.php>
+		<IfModule mod_authz_core.c>
+			Require all denied
+		</IfModule>
+		<IfModule !mod_authz_core.c>
+			Order allow,deny
+			Deny from all
+		</IfModule>
+	</files>
+
+	# Disable Directory Browsing - Security > Settings > System Tweaks > Directory Browsing
+	Options -Indexes
+
+	<IfModule mod_rewrite.c>
+		RewriteEngine On
+
+		# Protect System Files - Security > Settings > System Tweaks > System Files
+		RewriteRule ^wp-admin/install\.php$ - [F]
+		RewriteRule ^wp-admin/includes/ - [F]
+		RewriteRule !^wp-includes/ - [S=3]
+		RewriteRule ^wp-includes/[^/]+\.php$ - [F]
+		RewriteRule ^wp-includes/js/tinymce/langs/.+\.php - [F]
+		RewriteRule ^wp-includes/theme-compat/ - [F]
+		RewriteCond %{REQUEST_FILENAME} -f
+		RewriteRule (^|.*/)\.(git|svn)/.* - [F]
+
+		# Disable PHP in Uploads - Security > Settings > System Tweaks > PHP in Uploads
+		RewriteRule ^wp\-content/uploads/.*\.(?:php[1-7]?|pht|phtml?|phps)\.?$ - [NC,F]
+
+		# Disable PHP in Plugins - Security > Settings > System Tweaks > PHP in Plugins
+		RewriteRule ^wp\-content/plugins/.*\.(?:php[1-7]?|pht|phtml?|phps)\.?$ - [NC,F]
+
+		# Disable PHP in Themes - Security > Settings > System Tweaks > PHP in Themes
+		RewriteRule ^wp\-content/themes/.*\.(?:php[1-7]?|pht|phtml?|phps)\.?$ - [NC,F]
+	</IfModule>
+# END iThemes Security - Do not modify or remove this line
+
+# BEGIN WordPress
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
